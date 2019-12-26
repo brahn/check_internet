@@ -9,9 +9,9 @@ if [ ! -f "$LOGFILE" ]; then
 fi
 
 ping_and_format_result () {
-	echo `ping -q -c 1 -W 1 google.com | awk '/packet loss/ {print $7} /round-trip/ {split($4, times, "/"); print times[2], $5}'`
+	echo `ping -q -c 1 -W 1 8.8.8.8 | awk '/packet loss/ {print $7 ","} /round-trip/ {split($4, times, "/"); print times[2] "," $5}'`
 }
 
 now=$(date +%Y-%m-%d\ %T\ %Z)
 formatted_ping_result=$(ping_and_format_result)
-echo "$now $formatted_ping_result" >> $LOGFILE
+echo "$now,$formatted_ping_result" >> $LOGFILE
