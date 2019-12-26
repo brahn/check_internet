@@ -1,0 +1,4 @@
+Timestamp, Packet Loss, Average Ping Time, Units
+2019-12-26 14:50:24 EST 0.0% 25.987 ms
+2019-12-26 14:50:34 EST 0.0% 41.991 ms
+2019-12-26 14:51:52 EST 0.0% 25.647 ms
