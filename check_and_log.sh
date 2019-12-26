@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: fail if logfile is blank, or provide a default
+
 LOGFILE=$1
 if [ ! -f "$LOGFILE" ]; then
 	echo "$LOGFILE does not exist, creating..."
