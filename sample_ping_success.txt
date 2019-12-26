@@ -1,0 +1,5 @@
+PING google.com (172.217.7.238): 56 data bytes
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 30.527/34.256/38.432/2.516 ms
