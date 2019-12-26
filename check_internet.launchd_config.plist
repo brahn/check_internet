@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>check_internet</string>
+		<key>Program</key>
+		<string>/Users/brahn/check_internet/check_and_log.sh</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/Users/brahn/check_internet/check_and_log.sh</string>
+			<string>/Users/brahn/check_internet/internet_log.csv</string>
+		</array>
+		<key>StandardOutPath</key>
+		<string>/Users/brahn/check_internet/.error_log.txt</string>
+		<key>StandardErrorPath</key>
+		<string>/Users/brahn/check_internet/.error_log.txt</string>
+		<key>RunAtLoad</key>
+		<true/>
+		<key>StartInterval</key>
+		<!-- in seconds -->
+		<integer>60</integer> 
+		<key>ThrottleInterval</key> 
+		<!-- in seconds; without this runs every 10s for some reason -->
+		<integer>60</integer>
+		<key>KeepAlive</key>
+		<true/>
+	</dict>
+</plist>
