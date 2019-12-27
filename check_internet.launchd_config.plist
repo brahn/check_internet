@@ -4,17 +4,19 @@
 	<dict>
 		<key>Label</key>
 		<string>check_internet</string>
+		<key>WorkingDirectory</key>
+		<string>/Users/brahn/check_internet</string>
 		<key>Program</key>
 		<string>/Users/brahn/check_internet/check_and_log.sh</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/Users/brahn/check_internet/check_and_log.sh</string>
-			<string>/Users/brahn/check_internet/internet_log.csv</string>
+			<string>check_and_log.sh</string>
+			<string>internet_log.csv</string>
 		</array>
 		<key>StandardOutPath</key>
-		<string>/Users/brahn/check_internet/.error_log.txt</string>
+		<string>.error_log.txt</string>
 		<key>StandardErrorPath</key>
-		<string>/Users/brahn/check_internet/.error_log.txt</string>
+		<string>.error_log.txt</string>
 		<key>RunAtLoad</key>
 		<true/>
 		<key>StartInterval</key>
